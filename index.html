@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Onderzoeksproject</title>
+
+		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+	<body>
+		<div class="scroll">
+			<img class="blue" src="img/Blauw.png" alt="">
+			<img class="rose" src="img/Roze.png" alt=""> 
+			<img class="table-1" src="img/table-1.png" alt=""> 
+			<img class="yellow" src="img/Geel.png" alt="">
+			<img class="table-2" src="img/table-2.png" alt="">
+			<img class="green" src="img/Groen.png" alt="">
+		</div>
+		
+	    <script type="text/javascript" src="js/jInvertScroll/dist/js/jquery.jInvertScroll.js"></script>
+	    <script type="text/javascript">
+	    (function($) {
+	        $.jInvertScroll(['.scroll'],
+	            {
+	            height: 5000,
+	            onScroll: function(percent) {
+	                console.log(percent);
+	            }
+	        });
+	    }(jQuery));
+		</script>
+		
+    </body>
+</html>
