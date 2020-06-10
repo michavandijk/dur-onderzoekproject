@@ -1,9 +1,18 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 @font-face {
-    font-family: 'Cafe Francoise';
-    src: url('../fonts/Cafe\ Francoise_D.otf');
+    font-family: 'Romana Bold';
+    src: url('../fonts/RomanaBT-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Karla', sans-serif;
     margin: 0;
     background-image: url("../img/Achtergrond.png"); 
     background-size: 400px auto;
@@ -85,10 +94,8 @@ img {
     }
 }
 
-* {
-    font-family: Cafe Francoise;
-    box-sizing: border-box;
-}
+
+/* STYLING CONTENT */
 
 .title {
     display: inline-block;
@@ -102,6 +109,7 @@ img {
 }
 
 .body-title {
+    margin-left: 50px;
     margin-top: 20px;
     font-size: 20px;
     color: white;
