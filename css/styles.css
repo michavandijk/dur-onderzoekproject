@@ -26,61 +26,81 @@ img {
 }
 
 .scroll {
-    width: 650vw;
+    /* Total width of all sections combined */
+    width: 810vw;
     height: 100vh !important;
     position: fixed;
 }
 
 .blue { 
-    width: 120vw;
+    width: 100%;
     height: 100vh; 
     top: 0; 
     z-index: -1;
 }
 
 .rose { 
-    width: 100vw;
+    width: 100%;
     height: 100vh; 
     top: 0; 
-    left: 180vw; 
+    z-index: 0;
 }
 
 .table-1 { 
-    width: 80vw;
+    width: 100%;
     height: 100vh; 
     top: 0; 
-    left: 260vw; 
+    z-index: 0;
 }
 
 .yellow { 
-    width: 100vw;
+    width: 100%;
     height: 100vh; 
     top: 0; 
-    left: 320vw; 
+    z-index: 0;
 }
 
 .table-2 { 
-    width: 100vw;
+    width: 100%;
     height: 100vh; 
     top: 0; 
-    left: 400vw; 
     z-index: -1; 
 }
 
 .green { 
-    width: 100vw;
+    width: 100%;
     height: 100vh; 
     top: 0; 
-    left: 480vw; 
     z-index: -2; 
+}
+
+.button {
+    border: 5px solid white;
+    border-radius: 50px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    display: inline-block;
+    z-index: 300;
+}
+
+.button .side {
+    color: white;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    margin: -5px;
+    text-decoration: none;
+}
+
+.button .side.active {
+    background: white;
+    color: black;
 }
 
 @media screen and (min-height: 0px)
     and (max-height: 660px) {
     .scroll { top: -40px; }
-    .rose, .table-1, .yellow, .table-2, .green {
-        margin-top: 40px;
-    }
     section {
         margin-top: -40px !important;
     }
@@ -89,9 +109,6 @@ img {
 @media screen and (min-height: 800px) 
     {
     .scroll { top: 90px; }
-    .rose, .table-1, .yellow, .table-2, .green {
-        margin-top: -90px;
-    }
 }
 
 
@@ -131,15 +148,6 @@ img {
     font-size: 16px;
 }
 
-section {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    margin-top: -90px;
-    display: inline-block;
-    vertical-align: top;
-}
-
 .container {
     padding: 200px 0px 0px 200px;
 }
@@ -149,4 +157,78 @@ section {
     margin-top: 200px;
     margin-left: 25vw;
     height: calc(100vh - 200px);
+}
+
+.container-2 {
+    position: relative;
+    margin-top: 200px;
+    margin-left: 25vw;
+    height: calc(100vh - 200px);
+}
+
+.container-3 {
+    position: relative;
+    margin-top: 200px;
+    margin-left: 25vw;
+    height: calc(100vh - 200px);
+}
+
+.container-4 {
+    margin-left: 10vw;
+    position: relative;
+    margin-top: 200px;
+    height: calc(100vh - 200px);
+}
+
+.container-5 {
+    margin-left: 15vw;
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.container-6 {
+    margin-left: 15vw;
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.container-7 {
+    margin-left: 15vw;
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.page {
+    width: 120vw; 
+    margin-left: -20vw;
+    height: 100vh;
+    position: relative;
+    margin-top: -90px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page[data-index="0"] {
+    width: 100vw;
+    margin-left: 0;
+}
+
+.page[data-index="2"] {
+    margin-left: -23vw;
+}
+
+.page[data-index="3"] {
+    width: 100vw;
+}
+
+.page[data-index="4"] {
+    width: 100vw;
+}
+
+.page[data-index="6"] {
+    width: 180vw;
+}
+
+.page[data-index="7"] {
+    width: 110vw;
 }
