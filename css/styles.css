@@ -123,6 +123,14 @@ img {
     font-size: 24px;
 }
 
+.names {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    color: white;
+    font-size: 16px;
+}
+
 section {
     width: 100vw;
     height: 100vh;
