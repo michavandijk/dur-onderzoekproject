@@ -15,6 +15,7 @@ body {
     font-family: 'Karla', sans-serif;
     margin: 0;
     background-image: url("../img/Achtergrond.png"); 
+    background-repeat: repeat;
     background-size: 400px auto;
     overflow-x: hidden;
     height: 100vh;
@@ -27,7 +28,7 @@ img {
 
 .scroll {
     /* Total width of all sections combined */
-    width: 810vw;
+    width: 840vw;
     height: 100vh !important;
     position: fixed;
 }
@@ -116,28 +117,27 @@ img {
 
 .title {
     display: inline-block;
-    color: black;
+    color: white;
     font-size: 24px;
     text-align: center;
-    background-color: white;
+    background-color: #404559;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.21);
 }
 
-.body-title {
-    margin-left: 50px;
-    margin-top: 30px;
-    font-size: 22px;
-    color: white;
+.body {
+    position: absolute;
+    right: 500px;
+    bottom: 450px;
+    width: 420px;
+    font-size: 17px;
+    color: #ffe1c7;
 }
 
-.ready {
-    position: absolute;
-    right: 70px;
-    bottom: 40px;
+.body a {
     color: white;
-    font-size: 24px;
+    text-decoration: none;
 }
 
 .names {
